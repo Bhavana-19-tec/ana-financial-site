@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"> <!-- External CSS -->
+  <title>Contact Us - ANA Financial Firm</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header Navigation */
+    header {
+      background-color: #003366;
+      padding: 15px 0;
+    }
+
+    nav {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-section h1 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 30px;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .contact-info, .contact-form {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .contact-info h2 {
+      color: #003366;
+      margin-bottom: 15px;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input, .contact-form textarea {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-form button {
+      background-color: #003366;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #00509e;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About us.html">About Us</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="Client resource.html">Client Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <div class="contact-container">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2>Our Office</h2>
+          <p><strong>Address:</strong><br> 123 Finance Ave, Toronto, ON, Canada</p>
+          <p><strong>Phone:</strong> +1 (416) 555-0192</p>
+          <p><strong>Email:</strong> info@anafinancial.ca</p>
+          <p><strong>Business Hours:</strong><br> Monday - Friday: 9:00 AM - 5:00 PM</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ANA Financial Firm. All rights reserved.</p>
+    <p><a href="contact-us.html">Contact Us</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms</a></p>
+  </footer>
+
+</body>
+</html>
